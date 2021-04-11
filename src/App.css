@@ -1,0 +1,41 @@
+.App {
+    height: 470px;
+    display: grid;
+    grid-template-areas: "a a a";
+    gap: 5px;
+    grid-auto-columns: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    background-color: #008CBA;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #0de442;
+}
+
+.buttonNo {
+    background-color: #008CBA;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.buttonNo:hover {
+    background-color: #0de442;
+}
+
+.button:active {
+    background-color: rgb(248, 252, 9);
+    background: url(../src/components/image/like.png) no-repeat top center;
+}
+
+.buttonNo:active {
+    background-color: red;
+    background: url(../src/components/image/dislike.png) no-repeat top center;
+}

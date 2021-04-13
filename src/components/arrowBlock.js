@@ -1,19 +1,25 @@
-import React, { cloneElement } from 'react';
-import '../Styles.css'
-import { OutArrow } from './outArrow';
+import React, { useState, useEffect } from "react";
 
+import { OutArrow } from "./outArrow";
 
-const ArrowBlock = ({ arrayArrow, ms = 2000 }) => {
+export const ArrowBlock = ({ arrayArrow, ms = 2000 }) => {
+  const [count, setCount] = useState(1);
 
+  useEffect(() => {
+    if (count <= arrayArrow.length) {
+      setTimeout(() => {
+        setCount((count) => count + 1);
+      }, 1000);
+    }
+  }, [count]);
 
-  let current = 0;
-  let setOutIntervalArrow = setInterval(() => {
-    console.log(arrayArrow[current])
-    current++
-    if (current >= arrayArrow.length) clearInterval(setOutIntervalArrow)
-    return OutArrow(arrayArrow[current])
+  const arrayArrowToDisplay = arrayArrow.slice(0, count);
 
-  }, ms);
-  return <div>Hello</div>;
-}
-export default ArrowBlock;
+  return (
+    <>
+      {arrayArrowToDisplay.map((arrow, i) => (
+        <OutArrow key={i} arrow={arrow} />
+      ))}
+    </>
+  );
+};

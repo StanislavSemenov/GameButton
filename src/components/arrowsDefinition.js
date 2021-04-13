@@ -3,7 +3,7 @@ import { RandomGenerator } from './randomGenerator';
 import { ButtonStrokeCalculation } from './buttonStrokeCalculation';
 import ButtonBlockFinish from './buttonBlockFinish';
 import ButtonBlockStart from './buttonBlockStart';
-import ArrowBlock from './arrowBlock';
+import { ArrowBlock } from './arrowBlock';
 
 
 const ArrowsDefinition = () => {

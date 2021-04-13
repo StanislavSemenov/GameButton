@@ -1,15 +1,14 @@
-import './App.css';
-import ButtonBlock from './components/buttonBlock';
+import './Styles.css';
 import ArrowsDefinition from './components/arrowsDefinition';
 
-function App() {
+const App = () => {
 
   return (
 
-    <div className="App">
-
+    <div >
       <ArrowsDefinition />
-    </div>
+
+    </div >
   );
 }
 

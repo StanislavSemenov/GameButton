@@ -1,37 +1,49 @@
 import React from 'react';
-import buttonBlock from './buttonBlock';
 import { RandomGenerator } from './randomGenerator';
 import { ButtonStrokeCalculation } from './buttonStrokeCalculation';
-
-
+import ButtonBlockFinish from './buttonBlockFinish';
+import ButtonBlockStart from './buttonBlockStart';
+import ArrowBlock from './arrowBlock';
 
 
 const ArrowsDefinition = () => {
 
-    let size = 3
+    const size = 3 //адаптировать под входной параметр
+    const arrowQuantity = 10 //адаптировать под входной параметр
     let arrayArrow = []
     let arrayButtonArrow = []
-    let buttonStart = RandomGenerator(Math.pow(size, 2))//ген-я кнопка старта
-    let step = 0
+    let buttonStart = RandomGenerator(Math.pow(size, 2))//ген-я кнопка старта   
     let buttonStep = buttonStart
 
-    for (let i = 0; i < 10; i++) {
+    //расчет кнопки финиш
+    for (let i = 0; i < arrowQuantity; i++) {
         arrayButtonArrow[i] = ButtonStrokeCalculation(buttonStep, size)
         buttonStep = arrayButtonArrow[i].button
         arrayArrow[i] = arrayButtonArrow[i].arrow
-        step++
-        console.log(arrayButtonArrow)
+
     }
 
-    return < div >
-        <h3>buttonStart={buttonStart}</h3>
-        <h3>buttonFinish={buttonStep}</h3>
-        <h3> arrayArrow={arrayArrow}</h3>
+    return (
+        <div>
+            <div>
+                {/* {<ButtonBlockFinish
+                    size={size}
+                    buttonStart={buttonStart}
+                    buttonStep={buttonStep}
+                    arrayArrow={arrayArrow}
+                />} */}
+            </div>
+            <div>
+                {/*   <ButtonBlockStart size={size} /> */}
+            </div>
 
-        <h3>steps={step}</h3>
-    </ div >
+            <div>
+                <ArrowBlock arrayArrow={arrayArrow} />
+            </div>
 
-
+        </div >
+    )
 }
+
 
 export default ArrowsDefinition

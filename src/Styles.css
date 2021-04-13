@@ -1,0 +1,55 @@
+.App {
+    height: 470px;
+    display: grid;
+    grid-template-areas: "a a a";
+    gap: 5px;
+    grid-auto-columns: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    background-color: #28d4e0;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #f1f508;
+}
+
+.buttonStart {
+    background-color: #54d349;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.buttonStart:hover {
+    background-color: #f1f508;
+}
+
+.buttonFinish {
+    background-color: #8261be;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.buttonFinish:hover {
+    background-color: #f1f508;
+}
+
+.buttonStartFinish {
+    background-color: #f10fae;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.buttonStartFinish:hover {
+    background-color: #f1f508;
+}
+
+.buttonNo:hover {
+    background-color: #0de442;
+}

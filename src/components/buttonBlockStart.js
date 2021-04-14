@@ -10,7 +10,7 @@ const ButtonBlockStart = ({ size, buttonStart }) => {
   }
   return (
     <div className='App' >
-      Hello
+    
       {
         arrayButton.map((arrayButton, i) =>
 

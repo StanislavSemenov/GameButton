@@ -35,7 +35,7 @@ export const ArrowBlock = ({ size, buttonStart, buttonStep, arrayArrow, ms = 100
           <ButtonBlockFinish
             size={size}
             buttonStart={buttonStart}
-            buttonStep={buttonStep}
+            buttonFinish={buttonStep}
           />
         </div>
       }

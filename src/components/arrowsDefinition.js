@@ -4,7 +4,6 @@ import { ButtonStrokeCalculation } from './buttonStrokeCalculation';
 import ButtonBlockStart from './buttonBlockStart';
 import { ArrowBlock } from './arrowBlock';
 
-
 const ArrowsDefinition = ({ size = 3, arrowQuantity = 10 }) => {
 
     let arrayArrow = []
@@ -36,12 +35,8 @@ const ArrowsDefinition = ({ size = 3, arrowQuantity = 10 }) => {
                     arrayArrow={arrayArrow}
                 />
             </div>
-
-
-
         </div >
     )
 }
-
 
 export default ArrowsDefinition

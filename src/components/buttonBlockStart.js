@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Styles.css'
 
-
 const ButtonBlockStart = ({ size, buttonStart }) => {
 
   let arrayButton = []
@@ -10,17 +9,12 @@ const ButtonBlockStart = ({ size, buttonStart }) => {
   }
   return (
     <div className='App' >
-    
-      {
-        arrayButton.map((arrayButton, i) =>
-
-          (arrayButton === buttonStart && <button key={i} className='buttonStart' >Start</button>) ||
-          (<button key={i} className='button'>{arrayButton}</button>))
-
+      {arrayButton.map((arrayButton, i) =>
+        (arrayButton === buttonStart && <button key={i} className='buttonStart' >Start</button>) ||
+        (<button key={i} className='button'>{arrayButton}</button>))
       }
-
     </div >
   )
 }
 
-export default ButtonBlockStart;
+export default ButtonBlockStart

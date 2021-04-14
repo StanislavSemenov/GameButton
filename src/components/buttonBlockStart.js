@@ -3,13 +3,14 @@ import '../Styles.css'
 
 
 const ButtonBlockStart = ({ size, buttonStart }) => {
-  debugger
+
   let arrayButton = []
   for (let i = 1; i <= Math.pow(size, 2); i++) {
     arrayButton[i] = i
   }
   return (
     <div className='App' >
+      Hello
       {
         arrayButton.map((arrayButton, i) =>
 

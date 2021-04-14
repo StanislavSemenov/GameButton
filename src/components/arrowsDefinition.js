@@ -6,7 +6,7 @@ import { ArrowBlock } from './arrowBlock';
 
 
 const ArrowsDefinition = ({ size = 3, arrowQuantity = 10 }) => {
-    debugger
+
     let arrayArrow = []
     let arrayButtonArrow = []
     let buttonStart = RandomGenerator(Math.pow(size, 2))//ген-я кнопка старта   

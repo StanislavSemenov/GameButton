@@ -3,11 +3,12 @@ import ArrowsDefinition from './components/arrowsDefinition';
 
 const App = () => {
 
+  const Start = () => ArrowsDefinition(3, 10)
+  debugger
+
   return (
-
     <div >
-      <ArrowsDefinition />
-
+      <button className='button' onClick={Start}>Начать </button>
     </div >
   );
 }

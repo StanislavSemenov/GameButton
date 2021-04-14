@@ -1,3 +1,19 @@
+.arrow {
+    width: 3%;
+    height: 3%;
+    left: 5px;
+    margin-left: 5px;
+    grid-template-areas: "a a";
+    margin-top: 5px;
+}
+
+.arrowBlock {
+    left: 200px;
+    margin-left: 20%;
+    margin-top: 10%;
+    grid-template-areas: "a a";
+}
+
 .App {
     height: 470px;
     display: grid;

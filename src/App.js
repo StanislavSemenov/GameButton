@@ -11,7 +11,7 @@ const App = () => {
     <div >
       {!s &&
         <button className='start' onClick={() => setS(s => !s)}>
-          Начать игру
+          Начать игру Лабиринт
         </button>
       }
       {s && <ArrowsDefinition size={size} arrowQuantity={arrowQuantity} />}

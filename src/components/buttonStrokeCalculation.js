@@ -25,3 +25,4 @@ export const ButtonStrokeCalculation = (currentButton, size) => {
     (buttonArrow.button = ActionCreatorButton(currentButton, buttonArrow.arrow, size))
 
     return buttonArrow
+}
